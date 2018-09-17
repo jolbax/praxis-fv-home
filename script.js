@@ -103,10 +103,29 @@ const links = document.querySelectorAll("#navbarNav ul li a");
 links.forEach(link =>
   link.addEventListener("click", () =>
     scrollIt(
-      document.querySelector(`#${link.dataset.page}`).offsetTop -
-        nav.offsetHeight,
+      document.querySelector(`#${link.dataset.page}`),
       (duration = 1000),
       (easing = "easeInQuad")
     )
   )
 );
+
+const navContainer = document.querySelector(".pages");
+const navElement = document.querySelector("nav");
+
+const topOfNav = navContainer.offsetTop;
+function fixNav() {
+  console.log(topOfNav, window.scrollY);
+  if (window.scrollY >= topOfNav) {
+    // navContainer.style.top = 0;
+    navContainer.style.paddingTop = navElement.offsetHeight + "px";
+    navElement.classList.add("fixed-top");
+
+  } else {
+    navElement.classList.remove("fixed-top");
+    navContainer.style.paddingTop = 0;
+    // navContainer.style.top = "100%";
+  }
+}
+
+window.addEventListener("scroll", fixNav);

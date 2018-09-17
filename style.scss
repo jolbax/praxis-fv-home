@@ -1,6 +1,6 @@
 $header-color: black;
 html {
-  background:#eeeeee;
+  background: #white;
   font-size: 1rem;
 }
 
@@ -33,7 +33,11 @@ html {
 }
 
 .div-header {
-  height: 100vh;
+  min-height: 100%;
+  height: auto !important;
+  position: fixed;
+  overflow: hidden !important;
+  z-index: 1;
 
   header {
     align-items: center;
@@ -54,10 +58,14 @@ html {
 }
 
 .pages {
-  background: white;
+  background: rgb(247, 248,249);
   display: grid;
   grid-template-rows: repeat(4, 100vm);
   min-height: 100vh;
+  overflow: hidden;
+  z-index: 2;
+  position: absolute;
+  top:100%;
 }
 
 .page {
