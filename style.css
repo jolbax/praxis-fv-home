@@ -1,0 +1,109 @@
+html {
+  background: #eeeeee;
+  font-size: 1rem;
+}
+
+.letterhead-items {
+  border: 1px solid;
+  float: left;
+  padding: 20px 0;
+  width: 20px;
+}
+
+.item1 {
+  background: #064291;
+}
+
+.item2 {
+  background: #c23b06;
+}
+
+.item3 {
+  background: #f1ef43;
+}
+
+.div-header {
+  height: 100vh;
+}
+
+.div-header header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("./img/kids_01.png") bottom center no-repeat;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40vh;
+  margin-bottom: 10vh;
+}
+
+.div-header section {
+  font-size: 1.3rem;
+  font-weight: bolder;
+  margin: auto 10vw;
+  margin-bottom: 10vh;
+  text-align: center;
+}
+
+.pages {
+  background: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (100vm)[4];
+      grid-template-rows: repeat(4, 100vm);
+  min-height: 100vh;
+}
+
+.page {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+  min-height: 100vh;
+}
+
+.page h2 {
+  text-align: center;
+  margin: 1em;
+  color: black;
+}
+
+.image-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: cover;
+  min-height: 35vh;
+  position: relative;
+  width: 100vw;
+}
+
+.footer {
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  background-color: gray;
+  bottom: 0;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  font-size: 0.6em;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  width: 100vw;
+}
+
+.carousel-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  max-height: 50vh;
+}
+/*# sourceMappingURL=style-FINISHED.css.map */
