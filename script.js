@@ -105,7 +105,7 @@ links.forEach(link =>
     scrollIt(
       document.querySelector(`#${link.dataset.page}`).offsetTop + topOfNav,
       (duration = 1000),
-      (easing = "easeInQuad")
+      (easing = "linear")
     )
   )
 );
@@ -118,16 +118,11 @@ const topOfNav = navContainer.offsetTop;
 function fixNav() {
   console.log(topOfNav, window.scrollY);
   if (window.scrollY >= topOfNav) {
-    // navContainer.style.top = 0;
     navContainer.style.paddingTop = navElement.offsetHeight + "px";
-    // navContainer.style.position = "absolute";
-    // headerElement.style.position = "absolute";
     navElement.classList.add("fixed-top");
   } else {
     navElement.classList.remove("fixed-top");
-    headerElement.style.position = "fixed";
     navContainer.style.paddingTop = 0;
-    // navContainer.style.top = "100%";
   }
 }
 
