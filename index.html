@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <div class="container-fluid div-header">
+  <div class="d-flex flex-column div-header">
     <header class="container-fluid">
     </header>
     <section>
@@ -28,7 +28,7 @@
 
 
   <div class="pages">
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light" style="box-shadow: 0 5px rgba(0, 0, 0, 0.1);" >
       <!-- <a class="navbar-brand" href="#">Navigation</a> -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -179,9 +179,12 @@
     </div>
     <footer class="footer">
       <p>Powered by: <code>jolbax</code></p>
-      <p>Kontaktieren Sie uns:: <a href="mailto:someone@example.com">
-          someone@example.com</a>.</p>
-      <p><a href="impressum.html">Impressum</a></p>
+      <p>Kontaktieren Sie uns: <a href="mailto:info@praxis-freivogel.ch">
+          info@praxis-freivogel.ch</a></p>
+      <p><a href="impressum.html" onclick="window.open('impressum.html',
+      'newwindow',
+      'width=500,height=500');
+      return false;">Impressum</a></p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
