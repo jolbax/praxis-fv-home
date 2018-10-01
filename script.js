@@ -114,7 +114,7 @@ const navContainer = document.querySelector(".pages");
 const navElement = document.querySelector("nav");
 const headerElement = document.querySelector(".div-header");
 
-const topOfNav = navContainer.offsetTop;
+const topOfNav = navElement.offsetTop;
 function fixNav() {
   console.log(topOfNav, window.scrollY);
   if (window.scrollY >= topOfNav) {

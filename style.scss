@@ -34,16 +34,17 @@ html {
 
 .div-header {
   height: auto !important;
-  min-height: 100%;
+  min-height: 40%;
   overflow: hidden !important;
-  position: fixed;
-  z-index: 1;
+  // position: fixed;
+  // z-index: 1;
 
   header {
     align-items: center;
     background: url('./img/kids_01.png') center center no-repeat;
     background-size: contain;
-    height: 50vh;
+    height: 20vh;
+    max-width: 40vw;
     margin: auto 0;
   }
 
@@ -52,7 +53,7 @@ html {
     font-weight: bolder;
     margin: auto 10vw;
     // margin-bottom: 10vh;
-    text-align: center;
+    // text-align: center;
   }
 }
 
@@ -63,9 +64,9 @@ html {
   height: auto !important;
   overflow: hidden;
   position: absolute;
-  top: 100%;
+  // top: 100%;
   width: 100%;
-  z-index: 2;
+  // z-index: 2;
 }
 
 .page {
