@@ -103,7 +103,7 @@ const links = document.querySelectorAll("#navbarNav ul li a");
 links.forEach(link =>
   link.addEventListener("click", () =>
     scrollIt(
-      document.querySelector(`#${link.dataset.page}`).offsetTop + topOfNav,
+      document.querySelector(`#${link.dataset.page}`).offsetTop - navElement.offsetHeight,
       (duration = 1000),
       (easing = "linear")
     )
@@ -116,7 +116,7 @@ const headerElement = document.querySelector(".div-header");
 
 const topOfNav = navElement.offsetTop;
 function fixNav() {
-  console.log(topOfNav, window.scrollY);
+  // console.log(topOfNav, window.scrollY);
   if (window.scrollY >= topOfNav) {
     navContainer.style.paddingTop = navElement.offsetHeight + "px";
     navElement.classList.add("fixed-top");
