@@ -97,7 +97,7 @@
 }
 
 .carousel-img {
-  max-height: 50vh;
+  max-height: 60vh;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
