@@ -1,16 +1,8 @@
 $header-color: black;
-// html {
-//   background: #white;
-//   font-size: 1rem;
-// }
-
-// *, *:before, *:after {
-//   box-sizing: inherit;
-// }
 
 .letterhead-items {
   border: 1px solid;
-  float: left; // height: 100%;
+  float: left;
   padding: 20px 0;
   width: 20px;
 }
@@ -38,7 +30,7 @@ $header-color: black;
     background-size: contain;
     height: 20vh;
     margin: auto 0;
-    max-width: 40vw;
+    max-width: 300px;
   }
 
   section {
@@ -61,7 +53,6 @@ $header-color: black;
   min-height: 100vh;
 
   h2 {
-    // color: $header-color;
     margin: 1em;
     text-align: center;
   }
@@ -89,7 +80,7 @@ $header-color: black;
   flex-flow: row wrap;
   font-size: 0.8em;
   justify-content: space-around;
-  left: 0; // position: fixed;
+  left: 0;
   text-align: center;
   width: 100vw;
 }
@@ -99,6 +90,7 @@ $header-color: black;
   object-fit: cover;
   object-position: center;
 }
+
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
   body {
@@ -112,7 +104,14 @@ $header-color: black;
       font-size: 1rem;
     }
   }
+
+  .div-header {
+    header {
+      max-width: 40vw;
+    }
+  }
 }
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   body {
