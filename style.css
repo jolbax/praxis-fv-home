@@ -17,6 +17,10 @@
   background: #f1ef43;
 }
 
+.item4 {
+  background: white;
+}
+
 .div-header {
   height: auto !important;
   min-height: 40%;
