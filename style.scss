@@ -50,8 +50,8 @@ $header-color: black;
 }
 
 #carouselDiaShow {
-  width: 100vw; // or any other value
-  height: 40%; // or any other value
+  width: 100%; // or any other value
+  height: 50%; // or any other value
 
   .carousel-inner {
       width: 100%;
@@ -175,5 +175,23 @@ $header-color: black;
 @media (min-width: 1200px) {
   body {
     font-size: 1rem;
+  }
+
+  .pages {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .page {
+    max-width: 80%;
+  }
+
+  nav {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .footer {
+    max-width: 80%;
   }
 }
